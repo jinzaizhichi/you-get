@@ -93,6 +93,18 @@ $ git clone git://github.com/soimort/you-get.git
 
 Then put the cloned directory into your `PATH`, or run `./setup.py install` to install `you-get` to a permanent path.
 
+### Option 6: Homebrew (Mac only)
+
+You can install `you-get` easily via:
+
+```
+$ brew install you-get
+```
+
+### Shell completion
+
+Completion definitions for Bash, Fish and Zsh can be found in [`contrib/completion`](contrib/completion). Please consult your shell's manual for how to take advantage of them.
+
 ## Upgrading
 
 Based on which option you chose to install `you-get`, you may upgrade it via:
@@ -105,6 +117,12 @@ or download the latest release via:
 
 ```
 $ you-get https://github.com/soimort/you-get/archive/master.zip
+```
+
+In order to get the latest ```develop``` branch without messing up the PIP, you can try:
+
+```
+$ pip3 install --upgrade git+https://github.com/soimort/you-get@develop
 ```
 
 ## Getting Started
@@ -360,6 +378,7 @@ Use `--url`/`-u` to get a list of downloadable resource URLs extracted from the 
 | PPTV聚力 | <http://www.pptv.com/>         |✓| | |
 | 齐鲁网   | <http://v.iqilu.com/>          |✓| | |
 | QQ<br/>腾讯视频 | <http://v.qq.com/>      |✓| | |
+| 企鹅直播 | <http://live.qq.com/>          |✓| | |
 | 阡陌视频 | <http://qianmo.com/>           |✓| | |
 | THVideo  | <http://thvideo.tv/>           |✓| | |
 | Sina<br/>新浪视频<br/>微博秒拍视频 | <http://video.sina.com.cn/><br/><http://video.weibo.com/> |✓| | |
@@ -374,6 +393,7 @@ Use `--url`/`-u` to get a list of downloadable resource URLs extracted from the 
 | 央视网   | <http://www.cntv.cn/>          |✓| | |
 | 花瓣     | <http://huaban.com/>           | |✓| |
 | Naver<br/>네이버 | <http://tvcast.naver.com/>     |✓| | |
+| 芒果TV   | <http://www.mgtv.com/>         |✓| | |
 
 For all other sites not on the list, the universal extractor will take care of finding and downloading interesting resources from the page.
 
